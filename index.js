@@ -9,7 +9,7 @@ require("dotenv").config({ path: "./.env" })   // env File Path
 const app = express()
 // Middleware
 app.use(express.json())
-app.use(express.static("dists"))
+app.use(express.static("dist"))
 app.use(cookieParser())
 app.use(cors({
     origin: process.env.NODE_ENV === "development"
